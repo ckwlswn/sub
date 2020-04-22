@@ -28,13 +28,13 @@ body {
   }
   #main_header > h1 {
     position: absolute;
-    left: 0; top: 25px;
+    left: 0; top: 30px;
   }
 
   /* 네비게이션 */
   #gnb {
     position: absolute;
-    right: 0; top: 40px;
+    right: 0; top: 50px;
   }
   #gnb > ul > li {
     display: inline-block;
@@ -164,67 +164,60 @@ body {
 }
 #content > .link > a { color: blue;}
 
-/* footer */
-#footer {
-    width: 1920px;
-    height: 250px;
-    background: #88cce7;
-    /* outline: 1px solid red; */
-    margin: 0 auto;
-    position: absolute;
-    bottom: -922px;
-    
+/* 푸터 */
+#main_footer {
+  width: 1200px;
+  height: 190px;
+  margin: 0 auto;
+  /* outline: 1px solid red; */
+  position: absolute;
+  bottom: -950px;
+  left: 330px;
+}
+#footer_menu {
+  height: 35px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #dddddd;
+  line-height: 35px;
+}
+.footer-container-full {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #dddddd;
+}
+#footer_menu > ul > li {
+  display: inline;
+ 
+}
+#footer_menu > ul > li > a {
+  padding-right: 10px;
+  float: left;
+  color: #666;
+}
+#footer_menu > a {
+  background-color: #444;
+  color: #fff;
+  float: right;
+}
+.footer_info {
+  font-size: 15px;
+  padding-top: 10px;
 
 }
-#footer img {
-    
-    margin-top: 30px;
-    position: absolute;
-    left: 300px;   
-    overflow: hidden;
-    
+.footer_info > img {
+  position: absolute;
+  float: left;
+  padding: 60px;
 }
-#footer > p {
-    font-size: 10px;
-    position: absolute;
-    text-align: center;
-    left: 330px; top: 100px;
-    color: #000;
-    border-right: 1px solid #666;
-    padding-right: 30px;
+.footer_info > address {
+  position: relative;
+  left: 450px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
-
-#footer > ul {
-    font-size: 10px;
-    margin-top: 50px;
-    float: left;
-    position: absolute;
-    left: 30%; top: 35%;
-    margin-left: 20px;
-}
-
-#footer > ul > li a { 
-    font-size: 12px;
-    font-weight: bold;
-    color: #444;
+.footer_info > p {
+  position: relative;
+  left: 450px;
 }
 
 
-/* copy */
-#copy {
-    width: 1920px;
-    height: 30px;
-    background: #00a5e8;
-    margin: 0 auto;
-    position: absolute;
-    bottom: -950px;
-    line-height: 30px;
-    overflow: hidden;
-}
-#copy > p {
-    font-size: 10px;
-    color: #fff;
-    position: absolute;
-    left: 330px;   
-} 
 

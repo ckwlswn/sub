@@ -192,11 +192,16 @@ body {
   padding-right: 10px;
   float: left;
   color: #666;
+  font-size: 14px;
 }
-#footer_menu > a {
+#footer_menu > .btn_top {
   background-color: #444;
   color: #fff;
   float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+
 }
 .footer_info {
   font-size: 15px;
@@ -213,6 +218,7 @@ body {
   left: 450px;
   padding-top: 20px;
   padding-bottom: 10px;
+  font-style: normal;
 }
 .footer_info > p {
   position: relative;

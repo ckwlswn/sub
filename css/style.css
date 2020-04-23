@@ -1,7 +1,8 @@
 /* style.css */
 * {
-  margin: 0; padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a { text-decoration: none;}
@@ -9,201 +10,245 @@ ul { list-style-type: none;}
 
 body {
   font-size: 18px;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   min-width: 1200px;
   color: #333;
 }
-
+/* 헤더 */
 .header_wrap {
-  box-shadow: 0px 1px 8px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 8px rgba(0,0,0,0.1);
+  }
+  
+  #main_header {
+    width: 1200px; height: 100px;
+    position: relative;
+    /* background: #ccc; */
+    margin: 0 auto;
+  
+  }
+  #main_header > h1 {
+    position: absolute;
+    left: 0; top: 20px;
+  }
+
+  /* 네비게이션 */
+  #gnb {
+    position: absolute;
+    margin-right: 40px;
+  }
+  #gnb > ul > li {
+    display: inline-block;
+   margin-right: 40px;
+  }
+  #gnb > ul > li:last-child { margin-right: 0;}
+  
+  #gnb > ul > li a { 
+
+    position: relative;
+    top: 35px;
+    left: 780px;
+    color: #88888b; 
+  }
+  #gnb > ul > li a:hover { color: #00a5e8;}
+
+  /* 비주얼 */
+  #visual {
+      position: relative;
+      height: 250px;
+      /* outline: 2px solid red; */
+      overflow: hidden;
+      
+  }
+  #visual > .visual-text {
+      position: absolute;
+      left: 890px; top: 110px; 
+      color: white;
+  }
+  #visual > .visual-text > h2 { font-size: 32px;}
+
+  /* lnb */
+  #lnb {
+      width: 1200px;
+      /* outline: 2px solid red; */
+      overflow: hidden;
+      background:#fff;
+     margin: 0 auto;
+     margin-top: 50px;
+  }
+  #lnb > a {
+    display: block;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: #555;
+  }
+  /* lnb 배경색 */
+  #lnb > a.selected {
+    background: #00a5e8;
+    color: #fff;
+  }
+  #lnb > a:hover {
+    background:#88cce7;
+    color: #fff;
+  }
+
+  /* 컨텐츠 */
+  #content {
+      width: 1200px;
+      clear: both;
+      position:relative;
+      /* outline: 2px solid red; */
+      margin: 0 auto;
+      margin-top: 50px;
+      overflow: hidden;
+      text-align: center;
+ 
+     
+  }
+  #content p {
+    font-size: 14px;
+    color: #000;
+  }
+  #content b { font-size: 14px;}
+
+
+  /* 정보 */
+#content > .detail-info > table {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #000;
+    border: 4px solid #777;
+   
+    
+    
+
+}
+#content > .detail-info > table > caption { 
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-#main_header {
-  width: 1200px; height: 100px;
-  position: relative;
-  /* background: #ccc; */
+#content > .detail-info > table, th, td {font-size: 12px;}
+#content > .detail-info > table td {
+    text-align: left;
+    padding-left: 5px;
+}
+
+/* 연혁 */
+#content > .history > table {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-color: #444;
+    color: #000;
+    border: 4px solid #777;
+   
+}
+#content > .history> table > caption { 
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#content > .history > table, th, td { font-size: 12px;}
+#content > .history > table td {
+    text-align: left;
+    padding-left: 5px;
+}
+
+#content > .link {
+    width: 900px;
+    font-size: 10px;
+    margin-left: -270px;
+    margin-top: 50px;
+ 
+}
+#content > .link > a { color: blue;}
+
+/* 푸터 */
+#main_footer {
+  width: 1200px;
+  height: 190px;
   margin: 0 auto;
-
-}
-#main_header > h1 {
-  position: absolute;
-  left: 0; top: 18px;
-}
-#gnb {
-  position: absolute;
-  right: 0; top: 40px;
-}
-#gnb > ul > li {
-  display: inline-block;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-#gnb > ul > li:last-child { margin-right: 0;}
-
-#gnb > ul > li a { color: #333; }
-
-/* 비주얼 */
-#visual {
+  margin-top: 50px;
+  /* outline: 1px solid red; */
   position: relative;
-  height: 650px;
-  outline: 2px solid red;
-  overflow: hidden;
+  
 }
-#visual > .img {
-  position: absolute;
-  left: 0; top: 0;
+#footer_menu {
+  width: 1200px;
+  height: 35px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #dddddd;
+  line-height: 35px;
+}
+.footer-container-full {
   width: 1920px;
-  height: 650px;
-  /* margin: 0 auto; */
-  left: 50%;
-  margin-left: -960px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #dddddd;
 }
-
-#visual_pager {
-  width: 1200px;
-  outline: 2px solid red;
-  overflow: hidden;
-  background: #0b223c;
-  position: absolute;
-  bottom: 0;
-  /* 중앙정렬 */
-  left: 50%;
-  margin-left: -600px;
-}
-#visual_pager > a {
-  display: block;
-  float: left;
-  width: 33.33%;
-  text-align: center;
-  height: 55px;
-  line-height: 55px;
-  color: #fff;
-}
-/* 비주얼 버튼 배경색 상태  */
-#visual_pager > a.selected {
-  background: #f58020;
-}
-#visual_pager > a:hover {
-  background: rgba(245, 128, 32, 0.7);
-}
-
-#visual .container-full {
-  background: #0b223c;
-}
-
-/* 공지사항 */
-#notice {
-  background: #004089;
-  color: #fff;
-}
-#notice > .notice-container {
-  width: 1200px;
-  height: 45px;
-  line-height: 45px;
+#footer_menu > ul > li {
+  display: inline;
   margin: 0 auto;
-  overflow: hidden;
+ 
 }
-#notice > .notice-container .title {
-  float: left;
-  font-size: 16px;
-}
-#notice > .notice-container .title span {
-  margin-left: 1em;
-  margin-right: 1em;
-}
-#notice > .notice-container .text {
-  float: left;
-  font-size: 15px;
-}
-#notice > .notice-container .date {
-  float: right;
-  font-size: 15px;
-}
-#notice p { padding-top: 0;}
-
-/* 공통 섹션 */
-section header h2 {
-  font-size: 34px;
-  text-transform: uppercase;
+#footer_menu > ul > li:last-child {
   font-weight: bold;
 }
-section header p { 
-  font-size: 16px;
-  color: #666;
-  padding-top: 5px;
-}
-section h3 { 
-  font-size: 20px;
-}
-section p { padding-top: 5px;}
-section .col-text { margin-top: 1em;}
-section .row { margin-top: 30px;}
-
-/* operation 섹션 */
-#operation, 
-#company {
-  width: 1200px;
-  margin: 0 auto;
-  outline: 1px solid red;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-}
-#operation > .row, 
-#company > .row {
-  overflow: hidden;
-}
-#operation > .row > .col, 
-#company > .row > .col {
-  position: relative;
-  width: 386.66px; 
-  height: 355px;
-  margin-right: 20px;
+#footer_menu > ul > li a {
+  margin-left: 10px;
+  padding-right: 10px;
   float: left;
-  /* border: 1px solid green; */
-  overflow: hidden;
-}
-/* hover시 cover 박스 */
-#operation > .row > .col .cover {
-  display: none;
-}
-#operation > .row > .col:hover .cover {
-  position: absolute;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background: rgba(245, 128, 32, 0.85);
-  display: block;
-}
+  color: #666;
+  font-size: 14px;
 
-#operation > .row > .col:last-child,
-#company > .row > .col:last-child{
-  margin-right: 0;
 }
+#footer_menu > .btn_top {
+  background-color: #444;
+  color: #fff;
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
 
-/* more 버튼 */
-.btn-more {
-  display: inline-block;
-  width: 120px; height: 35px;
-  line-height: 35px;
-  border: 1px solid #333;
-  margin-top: 24px;
+}
+.footer_info {
+  /* outline: 1px solid red; */
+  height: 150px;
   font-size: 15px;
-  border-radius: 5px;
-  color: #333;
+  padding-top: 20px;
+
 }
 
-#company {
-  color: #fff;
+.mb {
+  margin-bottom: 5px;
+  
 }
-#company p { color: #fff;}
-#company .btn-more {
-  color: #fff;
-  border-color: #ccc;
+/* 인라인블록한 이유 : span은 마진바텀, 탑 안먹어서 */
+.footer_info span {
+  display: inline-block;
+}
+.footer_info > img {
+  position: absolute;
+  left: 0; 
+  margin-top: 30px;
+ 
+}
+.footer_info > address {
+
+  margin-left: 250px;
+  padding-top: 10px;
+  font-style: normal;
+  color: #666;
+}
+.footer_info > p {
+  margin-left: 250px;
+
 }
 
-/* 배경 이미지 채우기 */
-.company-container-full {
-  background: #131c2b;
-  background-image: url("../images/company-bg.jpg");
-  background-size: cover;
-}
+
+
